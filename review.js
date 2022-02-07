@@ -67,3 +67,19 @@ btn.addEventListener('click', greet);
 
  sect.removeChild(linkPara);
  sect.appendChild(linkPara)
+
+ //array methods 
+ fruits.forEach(function(item, index, array) {
+    console.log(item, index)
+  })
+  // Apple 0
+  // Banana 1
+
+  let last = fruits.pop() // remove Orange (from the end)
+// ["Apple", "Banana"]
+
+let first = fruits.shift() // remove Apple from the front
+// ["Banana"]
+
+let newLength = fruits.unshift('Strawberry') // add to the front
+// ["Strawberry", "Banana"]
