@@ -19,3 +19,16 @@ const squer = function(num){
   })
   console.log(openRest)
   
+  ///array methods 
+  //1. reduce : reduce all elements in array to a single value 
+// reduce method takes 2 params, callback func, initial value for accumulator
+const numbers=[1,-3,2,3]
+
+let sum = numbers.reduce((accumulator,currentValue) =>{
+  return accumulator + currentValue;
+
+},0);
+console.log(sum)//3
+// if you didnt give accumulator an initialvalue it will be set to the firt element in the array 
+
+///////
