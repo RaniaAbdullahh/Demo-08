@@ -83,3 +83,13 @@ let first = fruits.shift() // remove Apple from the front
 
 let newLength = fruits.unshift('Strawberry') // add to the front
 // ["Strawberry", "Banana"]
+
+let shallowCopySlice = fruits.slice()
+// ["Strawberry", "Mango"]
+
+let shallowCopyFrom = Array.from(fruits)
+// ["Strawberry", "Mango"]
+
+let deepCopy = JSON.parse(JSON.stringify(fruits));
+// ["Strawberry", "Mango"]
+
