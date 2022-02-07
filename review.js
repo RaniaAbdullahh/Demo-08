@@ -31,4 +31,39 @@ let sum = numbers.reduce((accumulator,currentValue) =>{
 console.log(sum)//3
 // if you didnt give accumulator an initialvalue it will be set to the firt element in the array 
 
-///////
+/////// loops 
+for (let step = 0; step < 5; step++) {
+    // Runs 5 times, with values of step 0 through 4.
+    console.log('Walking east one step');
+  }
+
+//////event handling 
+
+const btn = document.querySelector('button');
+
+function greet(event){
+  // print the event object to console
+  console.log('greet:', arguments)
+}
+
+btn.onclick = greet;
+///event listener 
+
+const btn = document.querySelector('button');
+
+function greet(event){
+  // print the event object to console
+  console.log('greet:', arguments)
+}
+
+btn.addEventListener('click', greet);
+
+
+
+///DOM manipulation
+// When writing web pages and apps, one of the most common things you'll want to do is manipulate the document structure in some way. This is usually done by using the Document Object Model (DOM), a set of APIs for controlling HTML and styling information that makes heavy use of the Document object. In this article we'll look at how to use the DOM in detail, along with some other interesting APIs that can alter your environment in interesting ways.
+
+
+
+ sect.removeChild(linkPara);
+ sect.appendChild(linkPara)
